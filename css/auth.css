@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+.Signup h1, .Login h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.input-container .icon {
+  padding: 10px;
+  background: #41c1ba;;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+
+.container {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+
+/*--------------- btn -------------------*/
+
+
+.auth-btn {
+  background-color: #41c1ba;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 20px !important;
+}
+
+.auth-btn:hover {
+  opacity: 1;
+}
+
+
+
+
+
+/* -------------------Input Fields ---------------------*/
+
+  
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+
+.input-field:focus {
+  border: 2px solid #41c1ba;
+}
+
+  
+
+
+/*---------------- Snackbar ------------------ */
+
+#snackbar {
+  visibility: hidden; 
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333; 
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed; 
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+  
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+/* ------------------------------------------------------------ */

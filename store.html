@@ -1,0 +1,215 @@
+<?php 
+
+session_start();
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://kit.fontawesome.com/5894320815.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="main-nav">
+              <img src="img/logo.png" class = "logo" alt="">
+              <ul class = "nav-menu">
+                  <li class = "nav-item active">
+                      <a href="index.html">HOME</a>
+                   </li>
+                  <li class = "nav-item">
+                      <a href="store.html" class = "active">STORE</a>
+                   </li>
+                   <?php 
+                        if(isset($_SESSION["useruid"])) {
+                                echo "<li class = 'nav-item'><a href='profile.html'>PROFILE</a></li>";
+                                echo "<li class = 'nav-item'><a href='includes/logout.inc.php'>LOGOUT</a></li>";
+                        }
+                        else {
+                                echo "<li class = 'nav-item'><a href='signup.html'>SIGN UP</a></li>";
+                                echo "<li class = 'nav-item'><a href='login.html'>LOGIN</a></li>";
+                        }
+                    ?>
+              </ul>
+              <div class="hamburger">
+                
+                <?php echo  '<i class="fas fa-bars fa-2x"></i>'; ?>
+                
+              </div>
+        </div>
+
+        <div class="Sidenav">
+            <a href="javascript:void(0)" class="closebtn">&times;</a>
+            <a href="index.html">HOME</a>
+            <a href="store.html">STORE</a>
+            <?php 
+                        if(isset($_SESSION["useruid"])) {
+                                echo "<a href='profile.html'>PROFILE</a>";
+                                echo "<a href='includes/logout.inc.php'>LOGOUT</a>";
+                        }
+                        else {
+                                echo "<a href='signup.html'>SIGN UP</a>";
+                                echo "<a href = 'login.html'>LOG IN</a>";
+                        }
+            ?>
+       </div>
+    </nav>
+    
+    <section class="Suggested-med">
+        <h1>Suggested</h1>
+        <div class="carousel" data-flickity='{ "groupCells": true}'>
+          <div class="carousel-cell card">
+              <div>
+                  <img src="img/tablet.jpg" alt="Avatar" style="width:100%; height: 180px;">
+                  <div class="container">
+                    <h4><b>CROCIN ADVANCE, Relief Capsules</b></h4> 
+                    <p>4.8 ⭐, 1800</p> 
+                    <p>RS 200</p>
+                    <button class="med-btn">Buy</button>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-cell card">
+              <div>
+                  <img src="img/tablet.jpg" alt="Avatar" style="width:100%; height: 180px;">
+                  <div class="container">
+                    <h4><b>CROCIN ADVANCE, Relief Capsules</b></h4> 
+                    <p>4.8 ⭐, 1800</p> 
+                    <p>RS 200</p>
+                    <button class="med-btn">Buy</button>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-cell card">
+              <div>
+                  <img src="img/tablet.jpg" alt="Avatar" style="width:100%; height: 180px;">
+                  <div class="container">
+                    <h4><b>CROCIN ADVANCE, Relief Capsules</b></h4> 
+                    <p>4.8 ⭐, 1800</p> 
+                    <p>RS 200</p>
+                    <button class="med-btn">Buy</button>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-cell card">
+              <div>
+                  <img src="img/tablet.jpg" alt="Avatar" style="width:100%; height: 180px;">
+                  <div class="container">
+                    <h4><b>CROCIN ADVANCE, Relief Capsules</b></h4> 
+                    <p>4.8 ⭐, 1800</p> 
+                    <p>RS 200</p>
+                    <button class="med-btn">Buy</button>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-cell card">
+              <div>
+                  <img src="img/tablet.jpg" alt="Avatar" style="width:100%; height: 180px;">
+                  <div class="container">
+                    <h4><b>CROCIN ADVANCE, Relief Capsules</b></h4> 
+                    <p>4.8 ⭐, 1800</p> 
+                    <p>RS 200</p>
+                    <button class="med-btn">Buy</button>
+                  </div>
+              </div>
+          </div>
+          
+        </div>
+  
+    </section>
+
+    <section class="Explore-med">
+        <h1>Explore</h1>
+        <div class="carousel" data-flickity='{ "groupCells": true}'>
+          <div class="carousel-cell card">
+            <div>
+                <img src="img/tablet.jpg" alt="Avatar" style="width:100%; height: 180px;">
+                <div class="container">
+                  <h4><b>CROCIN ADVANCE, Relief Capsules</b></h4> 
+                  <p>4.8 ⭐, 1800</p> 
+                  <p>RS 200</p>
+                  <button class="med-btn">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell card">
+            <div>
+                <img src="img/tablet.jpg" alt="Avatar" style="width:100%; height: 180px;">
+                <div class="container">
+                  <h4><b>CROCIN ADVANCE, Relief Capsules</b></h4> 
+                  <p>4.8 ⭐, 1800</p> 
+                  <p>RS 200</p>
+                  <button class="med-btn">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell card">
+            <div>
+                <img src="img/tablet.jpg" alt="Avatar" style="width:100%; height: 180px;">
+                <div class="container">
+                  <h4><b>CROCIN ADVANCE, Relief Capsules</b></h4> 
+                  <p>4.8 ⭐, 1800</p> 
+                  <p>RS 200</p>
+                  <button class="med-btn">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell card">
+            <div>
+                <img src="img/tablet.jpg" alt="Avatar" style="width:100%; height: 180px;">
+                <div class="container">
+                  <h4><b>CROCIN ADVANCE, Relief Capsules</b></h4> 
+                  <p>4.8 ⭐, 1800</p> 
+                  <p>RS 200</p>
+                  <button class="med-btn">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell card">
+            <div>
+                <img src="img/tablet.jpg" alt="Avatar" style="width:100%; height: 180px;">
+                <div class="container">
+                  <h4><b>CROCIN ADVANCE, Relief Capsules</b></h4> 
+                  <p>4.8 ⭐, 1800</p> 
+                  <p>RS 200</p>
+                  <button class="med-btn">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell card">
+            <div>
+                <img src="img/tablet.jpg" alt="Avatar" style="width:100%; height: 180px;">
+                <div class="container">
+                  <h4><b>CROCIN ADVANCE, Relief Capsules</b></h4> 
+                  <p>4.8 ⭐, 1800</p> 
+                  <p>RS 200</p>
+                  <button class="med-btn">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell card">
+            <div>
+                <img src="img/tablet.jpg" alt="Avatar" style="width:100%; height: 180px;">
+                <div class="container">
+                  <h4><b>CROCIN ADVANCE, Relief Capsules</b></h4> 
+                  <p>4.8 ⭐, 1800</p> 
+                  <p>RS 200</p>
+                  <button class="med-btn">Buy</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src = "js/script.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>

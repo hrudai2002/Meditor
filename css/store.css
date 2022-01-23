@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+.carousel {
+    background: #fff;
+  }
+  
+  .carousel-cell {
+    width: 23%;
+    height: 380px;
+    margin-right: 10px;
+    background:  #8bdad6;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+
+  
+  .carousel-cell.is-selected {
+    background:  #8bdad6;
+  }
+  
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: #fff;
+  }
+
+  .Suggested-med, .Explore-med {
+      margin: 100px;
+  }
+
+  .Suggested-med h1, .Explore-med h1 {
+      text-align: center;
+      margin: 20px;
+      font-size: 40px;
+      font-family: 'Open Sans', sans-serif;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 10px 16px;
+    line-height: 2;
+  }
+
+  .med-btn {
+    display: block;
+    width: 100%;
+  }
+
+  
+
+  @media only screen and (max-width: 1001px) {
+    .carousel-cell {
+       width: 30%;
+      
+    } 
+  }
+
+  @media only screen and (max-width: 888px) {
+    .carousel-cell {
+      width: 45%;
+     
+   } 
+  }
+  @media only screen and (max-width: 642px) {
+    .carousel-cell {
+      width: 70%;
+     
+   } 
+  }
+  @media only screen and (max-width: 455px) {
+    .carousel-cell {
+      width: 100%;
+     }
+     .Suggested-med, .Explore-med {
+      margin: 50px;
+     } 
+  }
+
+ 

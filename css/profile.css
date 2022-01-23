@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 200px 0 50px;
+
+}
+
+.userinfo {
+    margin: 50px 0 0 100px;
+    line-height: 2;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.userinfo h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.user-nav {
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.user-nav a {
+    margin: 50px;
+    font-size: 30px;
+    padding: 1px;
+    
+}
+
+.user-nav a.current {
+    border-bottom: 3px solid #000000;
+}
+
+ul.tasks {
+   display: flex;
+   justify-content: center;
+   margin: 50px;
+   flex-direction: column;
+   align-items: center;
+   font-family: 'Noto Sans', sans-serif;
+}
+
+ul.tasks li {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    position: relative;
+    width: 60%;
+}
+
+.done {
+   position: absolute;
+   top: 50%; 
+   right: 20px;
+   transform: translate(0%, -50%);
+}
+
+.remained {
+    position: absolute;
+    top: 50%;
+    right: 90px; 
+    transform: translate(0%, -50%);
+}
+
+.buy {
+    position: absolute;
+    top: 50%;
+    right: 180px;
+    transform: translate(0%, -50%);
+}
+
+button {
+    border: none;
+    background-color: #41c1ba; 
+    color: #fff;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.feedback-btn {
+    background-color: rgb(255, 36, 36);
+    margin-top: 10px;
+    display: block;
+    width: 245px;
+}
+
+.today, .tomorrow {
+    cursor: pointer;
+}
+
+
+button:hover {
+    opacity: 80%;
+}
+
+.tomorrow-tasks {
+    display: none;
+}
+
+@media only screen and (max-width: 1095px) {
+    .profile-img {
+        width: 300px;
+        margin-left: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 832px) {
+    .profile-img {
+        margin-left: 150px;
+    }
+    ul.tasks li {
+        width: 80%;
+    }
+    .user-profile {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    ul.tasks li {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 487px) {
+    ul.tasks li{
+        /* font-size: 14px; */
+        width: 100%;
+    }
+
+    li {
+        font-size: 14px;
+    }
+    .done {
+        right: 10px;
+        font-size: 12px;
+    }
+    .remained {
+        right: 60px;
+        font-size: 12px;
+    }
+    .buy {
+        right: 120px;
+        font-size: 12px;
+    }
+
+    .user-nav a{
+        font-size: 20px;
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .done {
+        right: 6px;
+    }
+    .remained {
+        right: 50px;
+    }
+    .buy {
+        right: 105px;
+    }
+    ul.tasks .text {
+        font-size: 15px;
+    }
+}
+
+
